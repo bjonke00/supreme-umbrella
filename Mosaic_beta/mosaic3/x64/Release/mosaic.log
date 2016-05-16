@@ -1,0 +1,54 @@
+﻿Build started 4/18/2016 11:18:53 PM.
+     1>Project "C:\Users\Benjamin\Documents\QTprojects\mosaic_morphing\Mosaic_beta\mosaic3\mosaic.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing GLWidget.h...
+         Moc'ing MainWindow.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /I. /IC:\qt\qt5.5.0\5.5\msvc2013_64\include /IC:\qt\qt5.5.0\5.5\msvc2013_64\include\QtOpenGL /IC:\qt\qt5.5.0\5.5\msvc2013_64\include\QtWidgets /IC:\qt\qt5.5.0\5.5\msvc2013_64\include\QtGui /IC:\qt\qt5.5.0\5.5\msvc2013_64\include\QtANGLE /IC:\qt\qt5.5.0\5.5\msvc2013_64\include\QtCore /Imoc /I"C:\qt\qt5.5.0\5.5\msvc2013_64\mkspecs\win32-msvc2013" /nologo /W3 /WX- /O2 /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_NO_DEBUG /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D NDEBUG /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt -Zc:strictStrings -w34100 -w34189 -w44996 GLWidget.cpp MainWindow.cpp moc\moc_GLWidget.cpp moc\moc_MainWindow.cpp Tile.cpp main.cpp
+         GLWidget.cpp
+         MainWindow.cpp
+         moc_GLWidget.cpp
+         moc_MainWindow.cpp
+         Tile.cpp
+         main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"release\\mosaic.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\qt\qt5.5.0\5.5\msvc2013_64\lib /LIBPATH:C:/qt/qt5.5.0/5.5/msvc2013_64/lib /LIBPATH:C:\Qt\Qt5.5.0\5.5\msvc2013_64\lib C:\qt\qt5.5.0\5.5\msvc2013_64\lib\qtmain.lib shell32.lib C:/qt/qt5.5.0/5.5/msvc2013_64/lib\Qt5Core.lib GLU32.lib C:\qt\qt5.5.0\5.5\msvc2013_64\lib\Qt5OpenGL.lib C:\qt\qt5.5.0\5.5\msvc2013_64\lib\Qt5Widgets.lib C:\qt\qt5.5.0\5.5\msvc2013_64\lib\Qt5Gui.lib C:\qt\qt5.5.0\5.5\msvc2013_64\lib\Qt5Core.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"release\mosaic.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Release\GLWidget.obj
+         x64\Release\MainWindow.obj
+         x64\Release\moc_GLWidget.obj
+         x64\Release\moc_MainWindow.obj
+         x64\Release\Tile.obj
+         x64\Release\main.obj
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glBegin referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glBindTexture referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glClear referenced in function "protected: virtual void __cdecl GLWidget::paintGL(void)" (?paintGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glClearColor referenced in function "protected: virtual void __cdecl GLWidget::initializeGL(void)" (?initializeGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glClearDepth referenced in function "protected: virtual void __cdecl GLWidget::initializeGL(void)" (?initializeGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glDepthFunc referenced in function "protected: virtual void __cdecl GLWidget::initializeGL(void)" (?initializeGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glDisable referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glEnable referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glEnd referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glGenTextures referenced in function "public: void __cdecl GLWidget::loadTexture(void)" (?loadTexture@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glHint referenced in function "protected: virtual void __cdecl GLWidget::initializeGL(void)" (?initializeGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glLightModelfv referenced in function "protected: virtual void __cdecl GLWidget::paintGL(void)" (?paintGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glLightfv referenced in function "protected: virtual void __cdecl GLWidget::paintGL(void)" (?paintGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glLoadIdentity referenced in function "protected: virtual void __cdecl GLWidget::paintGL(void)" (?paintGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glMatrixMode referenced in function "protected: virtual void __cdecl GLWidget::paintGL(void)" (?paintGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glPopMatrix referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glPushMatrix referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glRotatef referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glScalef referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glShadeModel referenced in function "protected: virtual void __cdecl GLWidget::initializeGL(void)" (?initializeGL@GLWidget@@MEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glTexCoord2f referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glTexEnvf referenced in function "public: void __cdecl GLWidget::loadTexture(void)" (?loadTexture@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glTexImage2D referenced in function "public: void __cdecl GLWidget::loadTexture(void)" (?loadTexture@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glTexParameterf referenced in function "public: void __cdecl GLWidget::loadTexture(void)" (?loadTexture@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glTranslatef referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glVertex3f referenced in function "public: void __cdecl GLWidget::drawTiles(void)" (?drawTiles@GLWidget@@QEAAXXZ)
+     1>GLWidget.obj : error LNK2019: unresolved external symbol __imp_glViewport referenced in function "protected: virtual void __cdecl GLWidget::resizeGL(int,int)" (?resizeGL@GLWidget@@MEAAXHH@Z)
+     1>release\\mosaic.exe : fatal error LNK1120: 27 unresolved externals
+     1>Done Building Project "C:\Users\Benjamin\Documents\QTprojects\mosaic_morphing\Mosaic_beta\mosaic3\mosaic.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:11.89
